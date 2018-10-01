@@ -1,0 +1,272 @@
+/* Global Styling */
+*{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+body{
+    margin: 0;
+}
+
+/* -------------------- Media Query -------------------- */
+
+@media (max-width: 767px) {  /* Mobil & Tablet */
+    
+}
+@media (min-width: 768px) {  /* Small screen Rules */
+    .container{
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {  /* Medium screen Rules */
+    .container{
+        width: 970px;
+    }
+    header{position: static;}
+}
+@media (min-width: 1200px) {  /* Large screen Rules */
+    .container{
+        width: 1170px;
+    }
+}
+
+/* -------------------- Media Query -------------------- */
+
+/* -----------------------------My Frameork ------------------------ */
+.container{
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.text-center{text-align: center;}
+.fl-left{float: left}
+.fl-right{float: right}
+.clear{clear: both}
+/* -----------------------------My Frameork ------------------------ */
+/* End Header */
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #000;
+    position: fixed;
+}
+
+header .logo h2{
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 3px;
+    text-shadow: 1px 3px 4px #CCC;
+}
+header .nav ul{
+    list-style: none;
+}
+header .nav ul li{
+    display: inline-block;
+    padding: 10px 15px;
+}
+header .nav ul li a{
+    text-decoration: none;
+    color: #DDD;
+    font-size: 19px;
+}
+header .nav ul li a:hover{
+    color: #EEE;
+}
+/* End Header */
+/* Start About */
+.about{
+    background-image: url(../images/bg.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
+.about .about-content{width: 80%;margin: auto;}
+.about p{
+    margin: 0;
+    padding-top: 100px;
+    color: #d6ced8;
+    font-size: 28px;
+    line-height: 2.2;
+}
+.about button{
+    background-color: #D84780;
+    border: 0;
+    margin-top: 40px;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 20px 30px;
+    cursor: pointer;
+}
+.about button:hover{
+    background: none;
+    border: 2px solid #D84780;
+}
+
+
+@media (max-width: 767px) {
+    .about p{
+        margin: 0;
+        padding-top: 50px;
+        font-size: 20px;
+        line-height: 1.8;
+    }
+}
+
+
+
+
+
+
+/* End About */
+/* Start Blog */
+.blog{
+    background-color: #222;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+.blog .card{
+    width: 30%;
+    margin-bottom: 30px;
+    margin-right: 3.3%;
+    background-color: #ede6e6;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 5px 4px 12px #807b7b;
+}
+.blog .part:first-child,
+.blog .part:nth-child(4){
+    margin-left: 0;
+}
+.blog .part:nth-child(3),
+.blog .part:last-child{
+    margin-right: 0;
+}
+.blog .card img{
+    width: 100%;
+}
+.blog .card p{
+    margin-top: 10px;
+    color: #555;
+    line-height: 1.8;
+    padding: 20px;
+    font-size: 19px;
+}
+.blog .card button{
+    background-color: #D84780;
+    border: 0;
+    margin-top: 10px;
+    color: #FFF;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 15px 20px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.blog .writing{
+    padding-top: 40px;
+    width: 45%;
+    min-height: 160px;
+    color: #EEE;
+}
+.blog .writing:first-child{margin-right: 2%}
+.blog .writing i{
+    width: 12%;
+    height: 100%;
+    float: left;
+}
+.blog .writing .wright{
+    width: 82%;
+    float: left;
+}
+.blog .writing .wright h2{
+    margin: 0;
+}
+.blog .writing .wright p{
+    color: #777;
+    font-size: 17px;
+    line-height: 1.6;
+}
+/* End Blog */
+/* Start Contact */
+.contact{
+    background-color: #D84780;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    overflow: hidden;
+}
+.contact .my-width{width: 600px;margin: auto;}
+.contact h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    word-spacing: 7px;
+}
+.contact p{
+    font-size: 20px;
+    word-spacing: 6px;
+}
+.contact form input,
+.contact form textarea,
+.contact form button{
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #FFF;
+    width: 100%;
+    height: 20px;
+    background: transparent;
+    border: 2px solid #FFF;
+    font-size: 19px;
+    padding: 18px;
+    outline: none;
+    border-radius: 10px;
+}
+::placeholder{color: #000}
+.contact form textarea{
+    height: 100px;
+}
+.contact form button{
+    width: auto;
+    padding: 10px 20px;
+    height: auto;
+    font-weight: bold;
+    border: 1px solid #FFF;
+    transition: all .2s ease-in-out;
+}
+.contact form button:hover{
+    border: 1px solid #000;
+    color: #000;
+}
+/* End Contact */
+/* Start footer */
+footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #000000;
+    text-align: center;
+}
+footer p{
+    color: #777;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+footer ul{
+    display: inline-block;
+    list-style: none;
+}
+footer ul li{float: left;margin-right: 10px;}
+footer ul li a{
+    color: #777;
+    padding: 6px;
+    text-decoration: none;
+    border: 1px solid #777;
+    transition: all .2s ease-in-out;
+}
+footer ul li a:hover{
+    color: #FFF;
+    border: 1px solid #FFF;
+}
